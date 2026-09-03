@@ -1,0 +1,32 @@
+@media screen and (min-width: 40rem) {
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 1rem 1.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    #cartoes {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.5rem 2rem;
+    }
+}

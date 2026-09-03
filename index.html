@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 231 | Vinícius Chuman</title>
+    <meta name="description" content="Página inicial do curso WDD 231 - Desenvolvimento Frontend para Web I, por Vinícius Chuman.">
+    <meta name="author" content="Vinícius Chuman">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/maior.css">
+
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/curso.js" defer></script>
+</head>
+<body>
+    <header>
+    <img src="imagens/logo.svg" alt="Logotipo de Vinícius Chuman" width="60" height="60">
+    <span>Vinícius Chuman</span>
+    <button id="menu" aria-label="Abrir menu de navegação"></button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="camara/index.html">Projeto da Câmara</a></li>
+            <li><a href="final/index.html">Projeto Final</a></li>
+        </ul>
+</nav>
+
+<main>
+    <h1>Página Inicial</h1>
+    <section>
+
+    <h2>Certificado em Programação de Computadores e Web</h2>
+    <p>Cursos obrigatórios do certificado de Programação Web e de Computadores da BYU-Idaho.</p>
+</section>
+
+<section>
+    <h2>Cursos</h2>
+    <div id="filtros">
+        <button id="btnTodos">Todos</button>
+        <button id="btnWdd">WDD</button>
+        <button id="btnCse">CSE</button>
+    </div>
+    <div id="cartoes"></div>
+</section>
+
+<section>
+    <h2>Créditos</h2>
+    <p>Total de créditos: <span id="totalCreditos"></span></p>
+</section>
+</main>
+
+    <footer>
+        <div>
+            <a href="https://github.com/vinichuman" target="_blank" rel="noopener">
+                <img src="imagens/github.svg" alt="GitHub" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/vinicius-chuman-a1803b101" target="_blank" rel="noopener">
+                <img src="imagens/linkedin.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+        </div>
+
+    <p>&copy; <span id="anoAtual"></span> Vinícius Chuman | São Paulo, Brasil</p>
+
+    <p id="ultimaModificacao"></p>
+</footer>
+
+    
+</body>
+</html>

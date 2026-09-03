@@ -1,0 +1,116 @@
+:root {
+    --cor-primaria: #1c3f5e;
+    --cor-secundaria: #f4a259;
+    --cor-fundo: #ffffff;
+    --cor-texto: #2b2b2b;
+    --fonte-titulo: "Roboto Slab", serif;
+    --fonte-texto: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cor-primaria);
+}
+
+header span {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+    color: var(--cor-fundo);
+}
+
+#menu {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--cor-fundo);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.aberto::before {
+    content: "✖";
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: var(--cor-primaria);
+}
+
+nav ul.aberto {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--cor-fundo);
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+#filtros {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#filtros button {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-texto);
+    cursor: pointer;
+}
+
+#filtros button:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+#cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.5rem;
+}
+
+.cartao {
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+}
+
+.cartao.concluido {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+main, footer {
+    padding: 1rem;
+}
