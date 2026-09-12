@@ -1,0 +1,64 @@
+[
+  {
+    "nome": "Casa Derby",
+    "endereco": "Largo do Belém, 34 - Belenzinho",
+    "telefone": "(11) 2345-6789",
+    "imagem": "derby.jpg",
+    "nivel": 2,
+    "info": "Moda feminina e masculina no atacado"
+  },
+  {
+    "nome": "Padaria Di Cunto",
+    "endereco": "Rua Borges de Figueiredo, 61 - Mooca",
+    "telefone": "(11) 2081-7100",
+    "site": "https://www.dicunto.com.br",
+    "imagem": "dicunto.jpg",
+    "nivel": 2,
+    "info": "Padaria e confeitaria tradicional"
+  },
+  {
+    "nome": "Shopping Vautier",
+    "endereco": "Rua Vautier, 248 - Brás",
+    "telefone": "(11) 3456-7890",
+    "site": "https://www.vautierpremium.com.br",
+    "imagem": "vautier.jpg",
+    "nivel": 1,
+    "info": "Confecção própria de malhas e tricôs"
+  },
+  {
+    "nome": "Sesc Belenzinho",
+    "endereco": "Rua Padre Adelino, 1000 - Belenzinho",
+    "telefone": "(11) 2076-9700",
+    "site": "https://www.sescsp.org.br",
+    "imagem": "sesc-belenzinho.jpg",
+    "nivel": 3,
+    "info": "Cultura, esporte e lazer"
+  },
+  {
+    "nome": "Clube Atlético Juventus",
+    "endereco": "Rua Juventus, 690 - Mooca",
+    "telefone": "(11) 2273-2000",
+    "site": "https://www.juventus.com.br",
+    "imagem": "juventus.jpg",
+    "nivel": 3,
+    "info": "Clube tradicional da Mooca"
+  },
+  {
+    "nome": "Feira da Madrugada",
+    "endereco": "Rua Monsenhor Andrade, 987 - Brás",
+    "telefone": "(11) 3222-1111",
+    "site": "https://www.feiradamadrugadasp.com.br",
+    "imagem": "feira-madrugada.jpg",
+    "nivel": 1,
+    "info": "Maior centro de compras populares"
+  },
+  {
+    "nome": "Busca Busca",
+    "endereco": "Barão de Ladário, 566 - Brás",
+    "telefone": "(11) 3333-4444",
+    "site": "https://web.buscabusca.com.br/",
+    "imagem": "busca-busca.jpg",
+    "nivel": 2,
+    "info": "Moda no atacado e varejo"
+  }
+]

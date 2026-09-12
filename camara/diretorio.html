@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretório - Câmara de Comércio</title>
+    <meta name="description" content="Página do diretório de membros da câmara">
+    <meta name="author" content="Vinícius Andrade Chuman">
+    
+    <meta property="og:title" content="Diretório de Membros">
+    <meta property="og:description" content="Conheça as empresas da nossa região.">
+    <meta property="og:image" content="images/juventus.jpeg">
+    <meta property="og:url" content="https://github.com/wdd231/camara/diretorio.html">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>Câmara de Comércio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html" class="active">Diretório</a></li>
+                <li><a href="join.html">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Membros da Câmara</h2>
+        
+        <div class="botoes">
+            <button id="btn-grade">Grade</button>
+            <button id="btn-lista">Lista</button>
+        </div>
+        
+        <div id="membros" class="view-grade"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
+        <p>Última modificação: <span id="modificacao"></span></p>
+    </footer>
+
+    <script src="scripts/diretorio.js"></script>
+</body>
+</html>

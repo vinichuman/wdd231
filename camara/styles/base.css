@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.botoes {
+    margin-bottom: 20px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para a Grade */
+.view-grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.view-grade section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.view-grade img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para a Lista */
+.view-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.view-lista section {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view-lista img {
+    display: none;
+}
+
+/* Responsivo para celular */
+@media (max-width: 500px) {
+    .view-lista section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
