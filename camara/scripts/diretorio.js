@@ -22,7 +22,7 @@ function mostrarMembros(membros) {
         let telefone = document.createElement("p");
         let site = document.createElement("a");
 
-        img.src = `images/${membro.imagem}`;
+        img.src = `imagens/${membro.imagem}`;
         img.alt = membro.nome;
         nome.textContent = membro.nome;
         endereco.textContent = membro.endereco;
