@@ -97,7 +97,7 @@ main {
 .hero img {
     height: auto;
     max-height: 400px;
-    object-fit: cover; /* Faz a imagem não esticar feio */
+    object-fit: cover;
 }
 
 .cta-container {
@@ -174,7 +174,17 @@ main {
     }
     
     .card-destaque {
-        flex: 1; /* Faz os cards de destaque terem a mesma largura */
+        flex: 1;
         margin: 0 10px;
     }
+}
+
+.events ul {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+.events li {
+    margin-bottom: 10px; /* Dá um pequeno espaço entre os eventos para facilitar a leitura */
 }
