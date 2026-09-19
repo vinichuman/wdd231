@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Câmara de Comércio</title>
+    <meta name="description" content="Página inicial da Câmara de Comércio.">
+    <meta name="author" content="Vinícius Andrade Chuman">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>Câmara de Comércio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="join.html">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <!-- Hero e CTA -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Visão da Cidade de São Paulo" width="100%">
+            <div class="cta-container">
+                <h2>Apoie o Comércio Local</h2>
+                <a href="join.html" class="cta-button">Associe-se Agora</a>
+            </div>
+        </section>
+
+        <!-- Grade de Informações -->
+        <div class="home-grid">
+            <section class="events">
+                <h3>Eventos Atuais</h3>
+                <ul>
+                    <li>Feira da Madrugada - Todos os dias</li>
+                    <li>Sesc Belenzinho: Mostra Cultural - 15 a 30 de Nov</li>
+                    <li>Festa Tradicional da Mooca - Dezembro</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h3>Clima Atual - São Paulo</h3>
+                <div id="current-weather">
+                    <!-- dados -->
+                </div>
+                <h4>Previsão (3 Dias)</h4>
+                <div id="forecast">
+                    <!-- previsão -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Destaques -->
+        <section class="spotlights">
+            <h3>Membros em Destaque</h3>
+            <div id="spotlight-container" class="spotlight-wrapper">
+                <!-- membros aleatórios -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
+        <p>Última modificação: <span id="modificacao"></span></p>
+    </footer>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>
