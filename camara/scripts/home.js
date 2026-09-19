@@ -60,12 +60,12 @@ async function getDestaques() {
             card.className = 'card-destaque';
             card.innerHTML = `
                 <h4>${empresa.nome}</h4>
-                <img src="images/${empresa.imagem}" alt="${empresa.nome}" width="100">
+                <img src="imagens/${empresa.imagem}" alt="${empresa.nome}" width="100">
                 <p><strong>Nível:</strong> ${empresa.nivel === 3 ? 'Ouro' : 'Prata'}</p>
                 <p>${empresa.telefone}</p>
                 <p>${empresa.endereco}</p>
                 <a href="${empresa.site}" target="_blank">Visitar Site</a>
-            `;
+    `;
             container.appendChild(card);
         });
     } catch (erro) {
