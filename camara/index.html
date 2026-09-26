@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Câmara de Comércio</title>
-    <!-- A descrição agora tem mais de 50 caracteres -->
     <meta name="description" content="Bem-vindo à página inicial da Câmara de Comércio de São Paulo. Junte-se a nós para apoiar os negócios locais.">
     <meta name="author" content="Vinícius Andrade Chuman">
     
@@ -12,9 +11,9 @@
     <link rel="icon" href="imagens/favicon.ico.png">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Início - Câmara de Comércio de São Paulo">
-    <meta property="og:description" content="Bem-vindo à página inicial da Câmara de Comércio de São Paulo. Junte-se a nós para apoiar os negócios locais.">
-    <meta property="og:imagens" content="https://vinichuman.github.io/wdd231/camara/imagens/hero.jpg">
+    <meta property="og:title" content="Início - Câmara de Comércio do Belenzinho e Região">
+    <meta property="og:description" content="Bem-vindo à página inicial da Câmara de Comércio do Belenzinho. Junte-se a nós para apoiar os negócios locais.">
+    <meta property="og:image" content="https://vinichuman.github.io/wdd231/camara/imagens/hero.jpg">
     <meta property="og:url" content="https://vinichuman.github.io/wdd231/camara/index.html">
     
     <!-- Google Fonts -->
@@ -26,6 +25,19 @@
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/base.css">
 </head>
+<body>
+    <header>
+        <h1>Câmara de Comércio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <!-- AQUI ESTÁ O LINK CORRIGIDO PARA O MENU -->
+                <li><a href="associacao.html">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="home-main">
         <!-- Hero e CTA -->
@@ -33,7 +45,7 @@
             <img src="imagens/hero.jpg" alt="Visão da Cidade de São Paulo">
             <div class="cta-container">
                 <h2>Apoie o Comércio Local</h2>
-                <a href="join.html" class="cta-button">Associe-se Agora</a>
+                <a href="associacao.html" class="cta-button">Associe-se Agora</a>
             </div>
         </section>
 

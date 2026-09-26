@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associe-se - Câmara de Comércio</title>
+    <meta name="description" content="Formulário de adesão para a Câmara de Comércio.">
+    <meta name="author" content="Vinícius Andrade Chuman">
+    
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/base.css">
+</head>
+<body>
+    <header>
+        <h1>Câmara de Comércio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="associacao.html" class="active">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="associacao-layout">
+        <section class="area-formulario">
+            <h2>Pedido de Associação</h2>
+            <form method="get" action="agradecimento.html">
+                
+                <label>Nome:
+                    <input type="text" name="nome" title="O seu primeiro nome" autocomplete="given-name" required>
+                </label>
+
+                <label>Sobrenome:
+                    <input type="text" name="sobrenome" title="O seu sobrenome" autocomplete="family-name" required>
+                </label>
+
+                <label>Cargo na Organização:
+                    <input type="text" name="cargo" title="Apenas letras, hífens e espaços, mínimo 7 caracteres" autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$">
+                </label>
+
+                <label>E-mail:
+                    <input type="email" name="email" title="Um endereço de email válido" autocomplete="email" placeholder="exemplo@email.com" required>
+                </label>
+
+                <label>Número de Celular:
+                    <input type="tel" name="telefone" title="O seu número de telemóvel" autocomplete="tel" required>
+                </label>
+
+                <label>Nome da Empresa/Organização:
+                    <input type="text" name="organizacao" title="Nome oficial da empresa" autocomplete="organization" required>
+                </label>
+
+                <fieldset>
+                    <legend>Nível de Associação:</legend>
+                    <label><input type="radio" name="nivel" value="np" required> Sem fins lucrativos (NP)</label>
+                    <label><input type="radio" name="nivel" value="bronze"> Bronze</label>
+                    <label><input type="radio" name="nivel" value="silver"> Prata</label>
+                    <label><input type="radio" name="nivel" value="gold"> Ouro</label>
+                </fieldset>
+
+                <label>Descrição da Atividade:
+                    <textarea name="descricao" title="Descreva o que a sua empresa faz" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="data_hora" id="data_hora">
+
+                <input type="submit" value="Enviar Pedido" class="botao-enviar">
+            </form>
+        </section>
+
+        <section class="area-cartoes">
+            <h3>Níveis e Benefícios</h3>
+            
+            <div class="cartao-nivel animar-entrada">
+                <h4>NP (Sem fins lucrativos)</h4>
+                <button type="button" class="btn-modal" data-modal="modal-np">Ver Benefícios</button>
+            </div>
+            <div class="cartao-nivel animar-entrada" style="animation-delay: 0.2s;">
+                <h4>Bronze</h4>
+                <button type="button" class="btn-modal" data-modal="modal-bronze">Ver Benefícios</button>
+            </div>
+            <div class="cartao-nivel animar-entrada" style="animation-delay: 0.4s;">
+                <h4>Prata</h4>
+                <button type="button" class="btn-modal" data-modal="modal-prata">Ver Benefícios</button>
+            </div>
+            <div class="cartao-nivel animar-entrada" style="animation-delay: 0.6s;">
+                <h4>Ouro</h4>
+                <button type="button" class="btn-modal" data-modal="modal-ouro">Ver Benefícios</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modais de Informação -->
+    <dialog id="modal-np">
+        <h2>Associação NP</h2>
+        <p>Criado para organizações sem fins lucrativos. Não tem taxa. Inclui inclusão no diretório online e acesso a newsletters informativas.</p>
+        <button class="fechar-modal">Fechar X</button>
+    </dialog>
+
+    <dialog id="modal-bronze">
+        <h2>Associação Bronze</h2>
+        <p>Acesso a eventos locais, um destaque básico no site e descontos em formações de curta duração.</p>
+        <button class="fechar-modal">Fechar X</button>
+    </dialog>
+
+    <dialog id="modal-prata">
+        <h2>Associação Prata</h2>
+        <p>Todos os benefícios da Bronze, mais destaque em anúncios da câmara e dois bilhetes gratuitos para o jantar anual de negócios.</p>
+        <button class="fechar-modal">Fechar X</button>
+    </dialog>
+
+    <dialog id="modal-ouro">
+        <h2>Associação Ouro</h2>
+        <p>A nossa melhor oferta. Destaque premium na página inicial, publicidade gratuita nos nossos eventos e assento especial no conselho consultivo.</p>
+        <button class="fechar-modal">Fechar X</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
+        <p>Última modificação: <span id="modificacao"></span></p>
+    </footer>
+
+    <script src="scripts/associacao.js"></script>
+</body>
+</html>

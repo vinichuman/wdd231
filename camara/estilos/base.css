@@ -193,3 +193,100 @@ main {
 .events li {
     margin-bottom: 10px;
 }
+
+/* Layout da página de associação */
+.associacao-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Estilo básico do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+fieldset label {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.botao-enviar {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: #002244;
+}
+
+/* Estilo dos Cartões e Modais */
+.area-cartoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartao-nivel {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Animação Automática (Keyframes) */
+@keyframes deslizarOpacidade {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.animar-entrada {
+    opacity: 0; /* Começa invisível para a animação assumir */
+    animation: deslizarOpacidade 0.8s ease-out forwards;
+}
+
+/* Responsividade: Telas maiores */
+@media (min-width: 768px) {
+    .associacao-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}

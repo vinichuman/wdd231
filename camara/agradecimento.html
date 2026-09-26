@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimento - Câmara de Comércio</title>
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/base.css">
+</head>
+<body>
+    <header>
+        <h1>Câmara de Comércio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="associacao.html">Associe-se</a></li>
+                <li><a href="discover.html">Descubra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="agradecimento">
+        <h2>Obrigado pelo seu pedido de associação!</h2>
+        <p>Recebemos as seguintes informações:</p>
+        
+        <div id="dados-recebidos" class="caixa-resumo">
+            <p><strong>Nome:</strong> <span id="res-nome"></span> <span id="res-sobrenome"></span></p>
+            <p><strong>Email:</strong> <span id="res-email"></span></p>
+            <p><strong>Telemóvel:</strong> <span id="res-telefone"></span></p>
+            <p><strong>Organização:</strong> <span id="res-org"></span></p>
+            <p><strong>Data do Registo:</strong> <span id="res-data"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman</p>
+    </footer>
+
+    <script>
+        document.getElementById("ano").textContent = new Date().getFullYear();
+
+        // Extrai os dados do URL (GET) e injeta no HTML
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        document.getElementById("res-nome").textContent = urlParams.get("nome");
+        document.getElementById("res-sobrenome").textContent = urlParams.get("sobrenome");
+        document.getElementById("res-email").textContent = urlParams.get("email");
+        document.getElementById("res-telefone").textContent = urlParams.get("telefone");
+        document.getElementById("res-org").textContent = urlParams.get("organizacao");
+        document.getElementById("res-data").textContent = urlParams.get("data_hora");
+    </script>
+</body>
+</html>
