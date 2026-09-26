@@ -294,3 +294,7 @@ fieldset label {
 header, header h1, header a {
     color: #ffffff;
 }
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
