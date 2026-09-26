@@ -290,3 +290,7 @@ fieldset label {
         grid-template-columns: 2fr 1fr;
     }
 }
+
+header, header h1, header a {
+    color: #ffffff;
+}
