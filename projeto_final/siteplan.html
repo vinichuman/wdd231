@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento do Site - Perfumaria Internacional</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --cor-primaria: #2C3E50;
+            --cor-secundaria: #E67E22;
+            --cor-fundo: #F8F9FA;
+            --cor-texto: #333333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--cor-secundaria);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--cor-primaria);
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .wireframes img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Planejamento do Site: Catálogo de Perfumaria</h1>
+        <p>Desenvolvido por Vinícius Andrade Chuman | WDD 231</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Nome do Site</h2>
+            <p><strong>Nome:</strong> Essência Global</p>
+            <p><strong>Motivo:</strong> O nome transmite a ideia de um catálogo internacional que reúne as melhores fragrâncias do mundo. É sofisticado e fácil de memorizar.</p>
+        </section>
+
+        <section>
+            <h2>2. Finalidade do Site</h2>
+            <p>O site funcionará como um catálogo dinâmico de perfumes importados organizados por categorias (Feminino, Masculino e Unissex). Ele oferecerá detalhes sobre as notas olfativas de cada perfume, buscará dados dinâmicos de lançamentos, e fornecerá um formulário interativo para os clientes enviarem dúvidas ou solicitarem encomendas específicas.</p>
+        </section>
+
+        <section>
+            <h2>3. Cenários</h2>
+            <ul>
+                <li><strong>Cenário 1:</strong> "Quais são os perfumes mais bem avaliados ou lançamentos recentes na categoria masculina?"</li>
+                <li><strong>Cenário 2:</strong> "Como posso entrar em contato com a loja para verificar a disponibilidade de uma encomenda exclusiva?"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Esquema de Cores</h2>
+            <p>As cores foram escolhidas para transmitir elegância e modernidade, características essenciais no mercado de perfumaria fina.</p>
+            <div>
+                <div class="color-box" style="background-color: #2C3E50;">#2C3E50</div>
+                <div class="color-box" style="background-color: #E67E22;">#E67E22</div>
+                <div class="color-box" style="background-color: #F8F9FA; color: #333;">#F8F9FA</div>
+            </div>
+            <ul>
+                <li><strong>Azul Escuro (#2C3E50):</strong> Usado no cabeçalho, rodapé e nos títulos principais (h1, h2, h3).</li>
+                <li><strong>Laranja Destaque (#E67E22):</strong> Usado em botões de ação (call-to-action), links ao passar o mouse (hover) e bordas de destaque.</li>
+                <li><strong>Cinza Claro (#F8F9FA):</strong> Usado como cor de fundo geral do site para facilitar a leitura e destacar as imagens dos produtos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Tipografia</h2>
+            <ul>
+                <li><strong>Fonte de Títulos:</strong> <em>'Playfair Display', serif</em>. Aplicada em todos os títulos (h1, h2, h3) para conferir um aspecto editorial, clássico e sofisticado.</li>
+                <li><strong>Fonte de Corpo:</strong> <em>'Roboto', sans-serif</em>. Aplicada nos parágrafos, menus de navegação e formulários, garantindo legibilidade e um visual limpo e moderno.</li>
+            </ul>
+        </section>
+
+        <section class="wireframes">
+            <h2>6. Wireframes</h2>
+            <p>Estrutura visual focada na usabilidade antes da aplicação de detalhes de design.</p>
+            
+            <h3>Visualização Mobile (Telas Pequenas)</h3>
+            <p>O layout mobile terá um menu hambúrguer, com os produtos empilhados em uma única coluna vertical para facilitar a rolagem.</p>
+            <img src="imagens/triangulos.jpg" alt="Wireframe Mobile">
+
+            <h3>Visualização Desktop (Telas Grandes)</h3>
+            <p>O layout desktop exibirá o menu horizontalmente no cabeçalho e utilizará CSS Grid para organizar o catálogo de perfumes em três ou quatro colunas.</p>
+            <img src="imagens/triangulos.jpg" alt="Wireframe Desktop">
+        </section>
+    </main>
+
+</body>
+</html>
