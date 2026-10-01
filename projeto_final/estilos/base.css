@@ -1,9 +1,9 @@
 /* Variáveis de Cores (do Planeamento) */
 :root {
-    --cor-primaria: #2C3E50;
-    --cor-secundaria: #E67E22;
-    --cor-fundo: #F8F9FA;
-    --cor-texto: #333333;
+    --cor-primaria: #050505; 
+    --cor-secundaria: #7F8C8D; 
+    --cor-fundo: #FFFFFF; 
+    --cor-texto: #111111; 
 }
 
 body {
