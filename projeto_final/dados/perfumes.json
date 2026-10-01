@@ -4,7 +4,7 @@
     { "id": 3, "nome": "MYSLF", "marca": "Yves Saint Laurent", "categoria": "Masculino", "preco": "799.00", "imagem": "imagens/myself.jpeg" },
     { "id": 4, "nome": "Uomo Born in Roma", "marca": "Valentino", "categoria": "Masculino", "preco": "850.00", "imagem": "imagens/valentino.jpeg" },
     { "id": 5, "nome": "Stronger With You Intensely", "marca": "Emporio Armani", "categoria": "Masculino", "preco": "690.00", "imagem": "imagens/stronger.jpeg" },
-    { "id": 6, "nome": "Vibrato", "marca": "Sospiro", "categoria": "Unissex", "preco": "2400.00", "imagem": "imagens/valentino.jpeg" },
+    { "id": 6, "nome": "Vibrato", "marca": "Sospiro", "categoria": "Unissex", "preco": "2400.00", "imagem": "imagens/vibrato.jpeg" },
     { "id": 7, "nome": "Tobacco Vanille", "marca": "Tom Ford", "categoria": "Unissex", "preco": "2600.00", "imagem": "imagens/tobacco.jpeg" },
     { "id": 8, "nome": "Hacivat", "marca": "Nishane", "categoria": "Unissex", "preco": "1950.00", "imagem": "imagens/hacivat.jpeg" },
     { "id": 9, "nome": "Side Effect", "marca": "Initio Parfums Privés", "categoria": "Unissex", "preco": "2300.00", "imagem": "imagens/side.jpeg" },

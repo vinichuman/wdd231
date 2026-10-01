@@ -1,9 +1,9 @@
 /* Variáveis de Cores (do Planeamento) */
 :root {
-    --cor-primaria: #050505; 
-    --cor-secundaria: #7F8C8D; 
-    --cor-fundo: #FFFFFF; 
-    --cor-texto: #111111; 
+    --cor-primaria: #40514E; /* Azul petróleo/acinzentado escuro */
+    --cor-secundaria: #D2A878; /* Champagne/Dourado suave */
+    --cor-fundo: #E1E8E3; /* Tom de vidro fosco (entre cinza e verde-água bem pálido) */
+    --cor-texto: #1F2826; /* Cinza profundo */
 }
 
 body {
