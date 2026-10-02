@@ -1,5 +1,4 @@
 [
-    { "id": 1, "nome": "XJ 1861 Naxos", "marca": "Xerjoff", "categoria": "Unissex", "preco": "1850.00", "imagem": "imagens/naxos.jpg" },
     { "id": 2, "nome": "Althaïr", "marca": "Parfums de Marly", "categoria": "Masculino", "preco": "2100.00", "imagem": "imagens/althair.jpeg" },
     { "id": 3, "nome": "MYSLF", "marca": "Yves Saint Laurent", "categoria": "Masculino", "preco": "799.00", "imagem": "imagens/myself.jpeg" },
     { "id": 4, "nome": "Uomo Born in Roma", "marca": "Valentino", "categoria": "Masculino", "preco": "850.00", "imagem": "imagens/valentino.jpeg" },
@@ -11,7 +10,9 @@
     { "id": 10, "nome": "The Most Wanted", "marca": "Azzaro", "categoria": "Masculino", "preco": "650.00", "imagem": "imagens/azzaro.jpeg" },
     { "id": 11, "nome": "Bal d'Afrique Absolu", "marca": "Byredo", "categoria": "Unissex", "preco": "1890.00", "imagem": "imagens/bal dafrique.webp" },
     { "id": 12, "nome": "Bleu de Chanel", "marca": "Chanel", "categoria": "Masculino", "preco": "1150.00", "imagem": "imagens/bleu.webp" },
+    { "id": 1, "nome": "XJ 1861 Naxos", "marca": "Xerjoff", "categoria": "Unissex", "preco": "1850.00", "imagem": "imagens/naxos.jpg" },
     { "id": 13, "nome": "Vanilla Powder", "marca": "Matière Premiere", "categoria": "Unissex", "preco": "1650.00", "imagem": "imagens/vanilla.jpeg" },
     { "id": 14, "nome": "Tygar", "marca": "Bvlgari", "categoria": "Masculino", "preco": "2800.00", "imagem": "imagens/bvlgari.jpeg" },
     { "id": 15, "nome": "Opera Infernal", "marca": "Fabbrica Della Musa", "categoria": "Unissex", "preco": "1450.00", "imagem": "imagens/opera.webp" }
+    
 ]
