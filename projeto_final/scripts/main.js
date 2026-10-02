@@ -27,25 +27,52 @@ async function carregarPerfumes() {
     }
 }
 
+// Elementos do Modal
+const modal = document.getElementById('modal-perfume');
+const fecharModal = document.getElementById('fechar-modal');
+
 function exibirPerfumes(lista) {
     container.innerHTML = '';
     
-    // Método de array (forEach) e Template Literals
     lista.forEach(perfume => {
         const cartao = document.createElement('div');
         cartao.className = 'cartao-perfume';
         
+        // Criar o cartão com o botão novo
         cartao.innerHTML = `
-            <img src="${perfume.imagem}" alt="Imagem do perfume ${perfume.nome}" loading="lazy">
+            <img src="${perfume.imagem}" alt="${perfume.nome}" loading="lazy">
             <h4>${perfume.nome}</h4>
-            <p><strong>Marca:</strong> ${perfume.marca}</p>
-            <p><strong>Categoria:</strong> ${perfume.categoria}</p>
             <p class="preco">R$ ${perfume.preco}</p>
+            <button class="btn-detalhes">Ver Detalhes</button>
         `;
+        
+        // Lógica para abrir o modal e preencher as informações
+        const btn = cartao.querySelector('.btn-detalhes');
+        btn.addEventListener('click', () => {
+            document.getElementById('modal-nome').textContent = perfume.nome;
+            document.getElementById('modal-img').src = perfume.imagem;
+            document.getElementById('modal-marca').textContent = perfume.marca;
+            document.getElementById('modal-categoria').textContent = perfume.categoria;
+            document.getElementById('modal-preco').textContent = `R$ ${perfume.preco}`;
+            
+            modal.style.display = 'block';
+        });
         
         container.appendChild(cartao);
     });
 }
+
+// Fechar o modal clicando no X
+fecharModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Fechar o modal clicando fora da caixa
+window.addEventListener('click', (evento) => {
+    if (evento.target === modal) {
+        modal.style.display = 'none';
+    }
+});
 
 // Inicia o carregamento quando o ficheiro é lido
 carregarPerfumes();
