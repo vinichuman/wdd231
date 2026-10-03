@@ -1,18 +1,17 @@
 [
-    { "id": 2, "nome": "Althaïr", "marca": "Parfums de Marly", "categoria": "Masculino", "preco": "2100.00", "imagem": "imagens/althair.jpeg" },
-    { "id": 3, "nome": "MYSLF", "marca": "Yves Saint Laurent", "categoria": "Masculino", "preco": "799.00", "imagem": "imagens/myself.jpeg" },
-    { "id": 4, "nome": "Uomo Born in Roma", "marca": "Valentino", "categoria": "Masculino", "preco": "850.00", "imagem": "imagens/valentino.jpeg" },
-    { "id": 5, "nome": "Stronger With You Intensely", "marca": "Emporio Armani", "categoria": "Masculino", "preco": "690.00", "imagem": "imagens/stronger.jpeg" },
-    { "id": 6, "nome": "Vibrato", "marca": "Sospiro", "categoria": "Unissex", "preco": "2400.00", "imagem": "imagens/vibrato.jpeg" },
-    { "id": 7, "nome": "Tobacco Vanille", "marca": "Tom Ford", "categoria": "Unissex", "preco": "2600.00", "imagem": "imagens/tobacco.jpeg" },
-    { "id": 8, "nome": "Hacivat", "marca": "Nishane", "categoria": "Unissex", "preco": "1950.00", "imagem": "imagens/hacivat.jpeg" },
-    { "id": 9, "nome": "Side Effect", "marca": "Initio Parfums Privés", "categoria": "Unissex", "preco": "2300.00", "imagem": "imagens/side.jpeg" },
-    { "id": 10, "nome": "The Most Wanted", "marca": "Azzaro", "categoria": "Masculino", "preco": "650.00", "imagem": "imagens/azzaro.jpeg" },
-    { "id": 11, "nome": "Bal d'Afrique Absolu", "marca": "Byredo", "categoria": "Unissex", "preco": "1890.00", "imagem": "imagens/bal dafrique.webp" },
-    { "id": 12, "nome": "Bleu de Chanel", "marca": "Chanel", "categoria": "Masculino", "preco": "1150.00", "imagem": "imagens/bleu.webp" },
-    { "id": 1, "nome": "XJ 1861 Naxos", "marca": "Xerjoff", "categoria": "Unissex", "preco": "1850.00", "imagem": "imagens/naxos.jpg" },
-    { "id": 13, "nome": "Vanilla Powder", "marca": "Matière Premiere", "categoria": "Unissex", "preco": "1650.00", "imagem": "imagens/vanilla.jpeg" },
-    { "id": 14, "nome": "Tygar", "marca": "Bvlgari", "categoria": "Masculino", "preco": "2800.00", "imagem": "imagens/bvlgari.jpeg" },
-    { "id": 15, "nome": "Opera Infernal", "marca": "Fabbrica Della Musa", "categoria": "Unissex", "preco": "1450.00", "imagem": "imagens/opera.webp" }
-    
+    { "id": 2, "nome": "Althaïr", "marca": "Parfums de Marly", "categoria": "Masculino", "preco": "2100.00", "imagem": "imagens/althair.jpeg", "notas": { "topo": "Flor de Laranjeira, Bergamota e Canela", "coracao": "Baunilha de Bourbon e Elemi", "fundo": "Pralinê, Almíscar e Madeira Guaiac" } },
+    { "id": 3, "nome": "MYSLF", "marca": "Yves Saint Laurent", "categoria": "Masculino", "preco": "799.00", "imagem": "imagens/MYSELF.jpeg", "notas": { "topo": "Bergamota da Calábria", "coracao": "Flor de Laranjeira Tunisiana", "fundo": "Ambrofix e Patchouli" } },
+    { "id": 4, "nome": "Uomo Born in Roma", "marca": "Valentino", "categoria": "Masculino", "preco": "850.00", "imagem": "imagens/valentino.jpeg", "notas": { "topo": "Sais Minerais e Folha de Violeta", "coracao": "Sálvia e Gengibre", "fundo": "Vetiver e Notas Amadeiradas" } },
+    { "id": 5, "nome": "Stronger With You Intensely", "marca": "Emporio Armani", "categoria": "Masculino", "preco": "690.00", "imagem": "imagens/stronger.jpeg", "notas": { "topo": "Pimenta Rosa e Zimbro", "coracao": "Toffee, Canela e Lavanda", "fundo": "Baunilha, Âmbar e Camurça" } },
+    { "id": 6, "nome": "Vibrato", "marca": "Sospiro", "categoria": "Unissex", "preco": "2400.00", "imagem": "imagens/vibrato.jpeg", "notas": { "topo": "Toranja, Bergamota e Jasmim", "coracao": "Gengibre e Notas Herbais", "fundo": "Almíscar, Âmbar e Cedro" } },
+    { "id": 7, "nome": "Tobacco Vanille", "marca": "Tom Ford", "categoria": "Unissex", "preco": "2600.00", "imagem": "imagens/tobacco.jpeg", "notas": { "topo": "Folha de Tabaco e Especiarias", "coracao": "Baunilha, Cacau e Fava Tonka", "fundo": "Frutas Secas e Notas Amadeiradas" } },
+    { "id": 8, "nome": "Hacivat", "marca": "Nishane", "categoria": "Unissex", "preco": "1950.00", "imagem": "imagens/hacivat.jpeg", "notas": { "topo": "Abacaxi, Toranja e Bergamota", "coracao": "Cedro, Patchouli e Jasmim", "fundo": "Musgo de Carvalho e Notas Amadeiradas" } },
+    { "id": 1, "nome": "XJ 1861 Naxos", "marca": "Xerjoff", "categoria": "Unissex", "preco": "1850.00", "imagem": "imagens/naxos.jpg", "notas": { "topo": "Bergamota, Limão e Lavanda", "coracao": "Jasmim, Canela, Mel e Cashmeran", "fundo": "Tabaco, Fava Tonka e Baunilha" } },
+    { "id": 9, "nome": "Side Effect", "marca": "Initio", "categoria": "Unissex", "preco": "2300.00", "imagem": "imagens/side.jpeg", "notas": { "topo": "Rum e Açafrão", "coracao": "Tabaco e Canela", "fundo": "Baunilha, Hedione e Sândalo" } },
+    { "id": 10, "nome": "The Most Wanted", "marca": "Azzaro", "categoria": "Masculino", "preco": "650.00", "imagem": "imagens/azzaro.jpeg", "notas": { "topo": "Cardamomo", "coracao": "Toffee (Caramelo)", "fundo": "Madeira de Âmbar" } },
+    { "id": 11, "nome": "Bal d'Afrique", "marca": "Byredo", "categoria": "Unissex", "preco": "1890.00", "imagem": "imagens/bal dafrique.webp", "notas": { "topo": "Limão de Amalfi, Tagetes e Groselha", "coracao": "Violeta, Ciclame e Jasmim", "fundo": "Vetiver, Almíscar e Âmbar" } },
+    { "id": 12, "nome": "Bleu de Chanel", "marca": "Chanel", "categoria": "Masculino", "preco": "1150.00", "imagem": "imagens/bleu.webp", "notas": { "topo": "Toranja, Limão e Hortelã", "coracao": "Gengibre, Jasmim e Noz-moscada", "fundo": "Incenso, Sândalo e Cedro" } },
+    { "id": 13, "nome": "Vanilla Powder", "marca": "Matière Premiere", "categoria": "Unissex", "preco": "1650.00", "imagem": "imagens/vanilla.jpeg", "notas": { "topo": "Leite de Coco", "coracao": "Baunilha de Madagascar", "fundo": "Almíscar Branco e Palo Santo" } },
+    { "id": 14, "nome": "Tygar", "marca": "Bvlgari", "categoria": "Masculino", "preco": "2800.00", "imagem": "imagens/bvlgari.jpeg", "notas": { "topo": "Toranja", "coracao": "Gengibre e Ambreta", "fundo": "Ambroxan, Vetiver e Patchouli" } },
+    { "id": 15, "nome": "Opera Infernal", "marca": "Fabbrica Della Musa", "categoria": "Unissex", "preco": "1450.00", "imagem": "imagens/opera.webp", "notas": { "topo": "Laranja Sanguínea e Pimenta Rosa", "coracao": "Rosa e Canela", "fundo": "Âmbar, Baunilha e Fava Tonka" } }
 ]

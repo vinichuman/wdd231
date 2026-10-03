@@ -195,17 +195,22 @@ footer {
 /* Caixa branca do Modal */
 .modal-conteudo {
     background-color: var(--cor-fundo);
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 20px;
     border-radius: 8px;
     width: 85%;
     max-width: 400px;
     text-align: center;
     position: relative;
+    max-height: 85vh; 
+    overflow-y: auto; 
 }
 
+/* Limita o tamanho da imagem */
 .modal-conteudo img {
     max-width: 100%;
+    max-height: 35vh;
+    object-fit: contain; 
     border-radius: 4px;
     margin: 15px 0;
 }
@@ -218,4 +223,52 @@ footer {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Estilos do Formulário */
+.formulario-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#form-contato label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+#form-contato input, #form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Estilo da Pirâmide Olfativa no Modal */
+.notas-olfativas {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.notas-olfativas h4 {
+    color: var(--cor-secundaria);
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.notas-olfativas p {
+    margin: 5px 0;
 }

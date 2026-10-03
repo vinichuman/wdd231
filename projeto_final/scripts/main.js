@@ -38,22 +38,23 @@ function exibirPerfumes(lista) {
         const cartao = document.createElement('div');
         cartao.className = 'cartao-perfume';
         
-        // Criar o cartão com o botão novo
         cartao.innerHTML = `
             <img src="${perfume.imagem}" alt="${perfume.nome}" loading="lazy">
             <h4>${perfume.nome}</h4>
-            <p class="preco">R$ ${perfume.preco}</p>
             <button class="btn-detalhes">Ver Detalhes</button>
         `;
         
-        // Lógica para abrir o modal e preencher as informações
         const btn = cartao.querySelector('.btn-detalhes');
         btn.addEventListener('click', () => {
             document.getElementById('modal-nome').textContent = perfume.nome;
             document.getElementById('modal-img').src = perfume.imagem;
             document.getElementById('modal-marca').textContent = perfume.marca;
             document.getElementById('modal-categoria').textContent = perfume.categoria;
-            document.getElementById('modal-preco').textContent = `R$ ${perfume.preco}`;
+            
+            // Notas olfativas
+            document.getElementById('modal-topo').textContent = perfume.notas.topo;
+            document.getElementById('modal-coracao').textContent = perfume.notas.coracao;
+            document.getElementById('modal-fundo').textContent = perfume.notas.fundo;
             
             modal.style.display = 'block';
         });

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essência Global - Contato</title>
+    <link rel="stylesheet" href="estilos/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Essência Global</h1>
+        <button id="menu-btn" aria-label="Abrir menu">&#9776;</button>
+        <nav id="menu">
+            <ul class="menu-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Fale Conosco</h2>
+            <p>Dúvidas sobre alguma fragrância ou encomendas especiais? Envie uma mensagem.</p>
+        </section>
+
+        <section class="formulario-container">
+            <form id="form-contato">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit" class="btn-detalhes">Enviar Mensagem</button>
+            </form>
+            
+            <div id="mensagem-sucesso" style="display: none; color: green; margin-top: 15px; font-weight: bold;">
+                Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Você já enviou <span id="contador" style="font-weight: bold;">0</span> mensagem(ns) para nós.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
+    </footer>
+
+    <script type="module" src="scripts/contato.js"></script>
+</body>
+</html>
