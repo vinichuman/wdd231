@@ -25,7 +25,7 @@ header, footer {
 }
 
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -299,21 +299,12 @@ header, header h1, header a {
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 
-/* 1. Nomear cada área individualmente */
-.item-1 { grid-area: local1; }
-.item-2 { grid-area: local2; }
-.item-3 { grid-area: local3; }
-.item-4 { grid-area: local4; }
-.item-5 { grid-area: local5; }
-.item-6 { grid-area: local6; }
-.item-7 { grid-area: local7; }
-.item-8 { grid-area: local8; }
-
-/* 2. Configurar o contentor principal para celulares (1 coluna) */
+/* Grade dos locais - celular: 1 coluna */
 .grid-locais {
     display: grid;
     gap: 20px;
-    grid-template-areas: 
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
         "local1"
         "local2"
         "local3"
@@ -324,10 +315,22 @@ header, header h1, header a {
         "local8";
 }
 
-/* 3. Ecrãs Médios / Tablets: 641px a 1024px (2 colunas) */
+/* Impede que o conteúdo de um card estique a coluna */
+.grid-locais > * {
+    min-width: 0;
+}
+
+.grid-locais img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Tablet: 2 colunas */
 @media (min-width: 641px) {
     .grid-locais {
-        grid-template-areas: 
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
             "local1 local2"
             "local3 local4"
             "local5 local6"
@@ -335,11 +338,31 @@ header, header h1, header a {
     }
 }
 
-/* 4. Ecrãs Grandes / Desktop: 1025px ou mais (4 colunas) */
+/* Desktop: 4 colunas */
 @media (min-width: 1025px) {
     .grid-locais {
-        grid-template-areas: 
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas:
             "local1 local2 local3 local4"
             "local5 local6 local7 local8";
     }
+}
+
+/* Reset absoluto para centrar o main na página Sobre */
+.sobre-main {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    
+    /* Substitui qualquer margem esquerda que estivesse a empurrar o conteúdo */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+    /* Se o body for uma grelha, isto obriga o main a esticar-se de ponta a ponta */
+    grid-column: 1 / -1 !important; 
+    
+    padding: 20px !important;
+    box-sizing: border-box !important;
 }

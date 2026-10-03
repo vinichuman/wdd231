@@ -45,6 +45,6 @@ export const locais = [
         nome: "Catedral da Sé",
         endereco: "Praça da Sé - Centro Histórico, São Paulo",
         descricao: "Um impressionante templo neogótico no marco zero da cidade, com capacidade para oito mil pessoas.",
-        imagem: "imagens/se.webp"
+        imagem: "imagens/catedral.webp"
     }
 ];
