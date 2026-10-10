@@ -3,16 +3,16 @@
     "nome": "Casa Derby",
     "endereco": "Largo do Belém, 34 - Belenzinho",
     "telefone": "(11) 2345-6789",
-    "imagem": "derby.jpg",
+    "imagem": "casaderby.webp",
     "nivel": 2,
-    "info": "Moda feminina e masculina no atacado"
+    "info": "Variedades"
   },
   {
     "nome": "Padaria Di Cunto",
     "endereco": "Rua Borges de Figueiredo, 61 - Mooca",
     "telefone": "(11) 2081-7100",
     "site": "https://www.dicunto.com.br",
-    "imagem": "dicunto.jpg",
+    "imagem": "dicunto.webp",
     "nivel": 2,
     "info": "Padaria e confeitaria tradicional"
   },
@@ -21,7 +21,7 @@
     "endereco": "Rua Vautier, 248 - Brás",
     "telefone": "(11) 3456-7890",
     "site": "https://www.vautierpremium.com.br",
-    "imagem": "vautier.jpg",
+    "imagem": "vautier.webp",
     "nivel": 1,
     "info": "Confecção própria de malhas e tricôs"
   },
@@ -30,7 +30,7 @@
     "endereco": "Rua Padre Adelino, 1000 - Belenzinho",
     "telefone": "(11) 2076-9700",
     "site": "https://www.sescsp.org.br",
-    "imagem": "sesc-belenzinho.jpg",
+    "imagem": "sesc-belenzinho.webp",
     "nivel": 3,
     "info": "Cultura, esporte e lazer"
   },
@@ -39,7 +39,7 @@
     "endereco": "Rua Juventus, 690 - Mooca",
     "telefone": "(11) 2273-2000",
     "site": "https://www.juventus.com.br",
-    "imagem": "juventus.jpg",
+    "imagem": "juventus.webp",
     "nivel": 3,
     "info": "Clube tradicional da Mooca"
   },
@@ -48,7 +48,7 @@
     "endereco": "Rua Monsenhor Andrade, 987 - Brás",
     "telefone": "(11) 3222-1111",
     "site": "https://www.feiradamadrugadasp.com.br",
-    "imagem": "feira-madrugada.jpg",
+    "imagem": "feira-madrugada.webp",
     "nivel": 1,
     "info": "Maior centro de compras populares"
   },
@@ -57,7 +57,7 @@
     "endereco": "Barão de Ladário, 566 - Brás",
     "telefone": "(11) 3333-4444",
     "site": "https://web.buscabusca.com.br/",
-    "imagem": "busca-busca.jpg",
+    "imagem": "buscabusca.webp",
     "nivel": 2,
     "info": "Moda no atacado e varejo"
   }
