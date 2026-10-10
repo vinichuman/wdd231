@@ -1,50 +1,50 @@
 export const locais = [
     {
-        nome: "Museu de Arte de São Paulo (MASP)",
-        endereco: "Av. Paulista, 1578 - Bela Vista, São Paulo",
-        descricao: "Símbolo da arquitetura moderna, possui o mais importante acervo de arte europeia do hemisfério sul.",
-        imagem: "imagens/masp.webp"
+        nome: "Sesc Belenzinho",
+        endereco: "Rua Padre Adelino, 1000 - Belenzinho, São Paulo - SP",
+        descricao: "Centro cultural e esportivo com teatro, exposições, piscinas e um terraço com vista para a Zona Leste.",
+        imagem: "imagens/sesc-belenzinho.webp"
     },
     {
-        nome: "Parque Ibirapuera",
-        endereco: "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo",
-        descricao: "O pulmão verde da cidade, oferece vastas áreas de lazer, museus e obras de Oscar Niemeyer.",
-        imagem: "imagens/ibirapuera.webp"
+        nome: "Estádio Conde Rodolfo Crespi (Rua Javari)",
+        endereco: "Rua Javari, 117 - Mooca, São Paulo - SP",
+        descricao: "Casa do Clube Atlético Juventus desde 1929, um dos estádios mais tradicionais e charmosos da cidade.",
+        imagem: "imagens/juventus.webp"
     },
     {
-        nome: "Mercado Municipal (Mercadão)",
-        endereco: "Rua da Cantareira, 306 - Centro Histórico, São Paulo",
-        descricao: "Famoso pela arquitetura e pela gastronomia, incluindo o icónico sanduíche de mortadela.",
-        imagem: "imagens/mercadao.webp"
+        nome: "Centro Gastronômico Di Cunto",
+        endereco: "Rua Borges de Figueiredo, 61 - Mooca, São Paulo - SP",
+        descricao: "Referência da tradição italiana da Mooca, com padaria, doces finos e massas artesanais.",
+        imagem: "imagens/dicunto.webp"
     },
     {
-        nome: "Avenida Paulista",
-        endereco: "Avenida Paulista, São Paulo - SP",
-        descricao: "O coração financeiro e cultural da cidade, repleto de centros culturais, lojas e restaurantes.",
-        imagem: "imagens/paulista.webp"
+        nome: "Feira da Madrugada",
+        endereco: "Pátio do Pari - Brás, São Paulo - SP",
+        descricao: "Grande polo de compras popular que funciona de madrugada e atrai lojistas de todo o país.",
+        imagem: "imagens/feira-madrugada.webp"
     },
     {
-        nome: "Bairro da Liberdade",
-        endereco: "Praça da Liberdade - Liberdade, São Paulo",
-        descricao: "O maior reduto da comunidade japonesa fora do Japão, com feiras tradicionais e arquitetura temática.",
-        imagem: "imagens/liberdade.webp"
+        nome: "Shopping Vautier Premium",
+        endereco: "Brás, São Paulo - SP",
+        descricao: "Centro de compras moderno do Brás, com centenas de lojas de moda no atacado e no varejo.",
+        imagem: "imagens/vautier.webp"
     },
     {
-        nome: "Beco do Batman",
-        endereco: "R. Gonçalo Afonso - Vila Madalena, São Paulo",
-        descricao: "Uma galeria de arte a céu aberto, famosa pelos seus muros totalmente cobertos por grafitis vibrantes.",
-        imagem: "imagens/beco.webp"
+        nome: "Busca Busca Shopping",
+        endereco: "Zona Leste, São Paulo - SP",
+        descricao: "Shopping popular com grande variedade de lojas de roupas, calçados e acessórios a preços acessíveis.",
+        imagem: "imagens/buscabusca.webp"
     },
     {
-        nome: "Pinacoteca do Estado",
-        endereco: "Praça da Luz, 2 - Luz, São Paulo",
-        descricao: "O museu de arte mais antigo de São Paulo, dedicado à produção artística brasileira do século XIX até hoje.",
-        imagem: "imagens/pinacoteca.webp"
+        nome: "Casa Derby",
+        endereco: "Zona Leste, São Paulo - SP",
+        descricao: "Loja tradicional de utilidades domésticas e artigos para o lar, parte da história do comércio local.",
+        imagem: "imagens/casaderby.webp"
     },
     {
-        nome: "Catedral da Sé",
-        endereco: "Praça da Sé - Centro Histórico, São Paulo",
-        descricao: "Um impressionante templo neogótico no marco zero da cidade, com capacidade para oito mil pessoas.",
-        imagem: "imagens/catedral.webp"
+        nome: "Museu da Imigração",
+        endereco: "Rua Visconde de Parnaíba, 1316 - Mooca, São Paulo - SP",
+        descricao: "Antiga hospedaria de imigrantes que hoje conta a história das famílias que formaram a região.",
+        imagem: "imagens/museu-imigracao.webp"
     }
 ];
