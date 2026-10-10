@@ -39,7 +39,7 @@ locais.forEach((local, index) => {
     cartao.innerHTML = `
         <h2>${local.nome}</h2>
         <figure>
-            <img src="${local.imagem}" alt="${local.nome}" width="300" height="200" loading="lazy">
+            <img src="${local.imagem}" alt="${local.nome}" width="300" height="200" loading="${index === 0 ? 'eager' : 'lazy'}">
         </figure>
         <address>${local.endereco}</address>
         <p>${local.descricao}</p>
