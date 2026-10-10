@@ -48,3 +48,10 @@ locais.forEach((local, index) => {
     
     grelhaLocais.appendChild(cartao);
 });
+
+    // Botão "Saiba Mais" abre o endereço no Google Maps
+    const botao = cartao.querySelector('button');
+    botao.addEventListener('click', () => {
+        const busca = encodeURIComponent(`${local.nome}, ${local.endereco}`);
+        window.open(`https://www.google.com/maps/search/?api=1&query=${busca}`, '_blank', 'noopener');
+    });
