@@ -15,8 +15,9 @@ header, footer {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px 20px;
 }
 
 .menu a {
@@ -365,12 +366,6 @@ header, header h1, header a {
     
     padding: 20px !important;
     box-sizing: border-box !important;
-}
-
-/* Menu responsivo: quebra linha em telas pequenas */
-.menu {
-    flex-wrap: wrap;
-    gap: 10px 20px;
 }
 
 /* Wayfinding: destaca a página atual */
