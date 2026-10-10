@@ -1,6 +1,10 @@
 // Importar os dados do arquivo .mjs
 import { locais } from '../data/locais.mjs';
 
+// Rodapé
+document.getElementById('ano').textContent = new Date().getFullYear();
+document.getElementById('modificacao').textContent = document.lastModified;
+
 // 1. Lógica do LocalStorage para Visitas
 const mensagemVisita = document.getElementById('mensagem-visita');
 const ultimaVisitaMs = window.localStorage.getItem('ultimaVisita_camara');
@@ -39,7 +43,7 @@ locais.forEach((local, index) => {
         </figure>
         <address>${local.endereco}</address>
         <p>${local.descricao}</p>
-        <button>Saiba Mais</button>
+        <button type="button">Saiba Mais</button>
     `;
     
     grelhaLocais.appendChild(cartao);

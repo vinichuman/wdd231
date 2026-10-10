@@ -4,60 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Câmara de Comércio - Sobre a Nossa Região</title>
-    <link rel="stylesheet" href="estilos/base.css"> 
-    <!-- Script definido como módulo -->
-    <script type="module" src="scripts/sobre.js" defer></script>
+    <meta name="description" content="Conheça os principais pontos de interesse de São Paulo: museus, parques, mercados e bairros culturais da região da Câmara de Comércio.">
+    <meta name="author" content="Vinícius Andrade Chuman">
+    <link rel="stylesheet" href="estilos/base.css">
+    <script type="module" src="scripts/sobre.js"></script>
 </head>
 <body>
     <header>
-    <h1>Câmara de Comércio</h1>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="diretorio.html">Diretório</a></li>
-            <li><a href="associacao.html">Associe-se</a></li>
-            <li><a href="sobre.html" class="active">Sobre a Região</a></li>
-        </ul>
-    </nav>
-</header>
+        <h1>Câmara de Comércio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="associacao.html">Associe-se</a></li>
+                <li><a href="sobre.html" class="active" aria-current="page">Sobre a Região</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main class="sobre-main">
-    <!-- 1. Mensagem de Visita -->
-    <div id="mensagem-visita" class="alerta-visita"></div>
-    
-    <!-- 2. Título -->
-    <section class="apresentacao-area">
-        <h2>Descubra São Paulo</h2>
-        <p>Conheça os pontos de interesse que tornam a nossa região um centro de oportunidades, cultura e turismo.</p>
-    </section>
-
-    <!-- 3. Grelha de Locais -->
-    <section id="galeria-locais" class="grid-locais">
-        <!-- O JavaScript vai injetar os cartões aqui -->
-    </section>
-</main>
-    </section>
-</main>
-
-        <!-- Área para a mensagem de visita (LocalStorage) -->
+    <main class="sobre-main">
+        <!-- Mensagem de visita (localStorage) -->
         <div id="mensagem-visita" class="alerta-visita"></div>
 
         <section class="apresentacao-area">
-            <h1>Descubra São Paulo</h1>
+            <h2>Descubra São Paulo</h2>
             <p>Conheça os pontos de interesse que tornam a nossa região um centro de oportunidades, cultura e turismo.</p>
         </section>
 
-        <!-- Contentor para as áreas de grelha nomeadas -->
-        <section id="galeria-locais" class="grid-locais">
-            <!-- Os 8 cartões serão injetados aqui pelo JavaScript -->
-        </section>
+        <!-- Os 8 cartões são injetados aqui pelo JavaScript -->
+        <section id="galeria-locais" class="grid-locais"></section>
     </main>
 
-     <footer>
+    <footer>
         <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
         <p>Última modificação: <span id="modificacao"></span></p>
     </footer>
-
-    <script src="scripts/home.js" defer></script>
 </body>
 </html>
