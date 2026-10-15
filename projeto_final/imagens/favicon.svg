@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#4e2700"/>
+  <rect x="26" y="8" width="12" height="8" rx="2" fill="#e6c08f"/>
+  <rect x="29" y="16" width="6" height="5" fill="#e6c08f"/>
+  <rect x="15" y="21" width="34" height="35" rx="8" fill="#e6c08f"/>
+  <rect x="21" y="30" width="22" height="16" rx="3" fill="#4e2700"/>
+  <text x="32" y="43" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#e6c08f" text-anchor="middle">EG</text>
+</svg>

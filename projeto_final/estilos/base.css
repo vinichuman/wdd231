@@ -1,32 +1,53 @@
-/* Variáveis de Cores (do Planeamento) */
+/* Variáveis de cores */
 :root {
-    --cor-primaria: #4e2700; /* Marrom escuro para o cabeçalho e rodapé */
-    --cor-secundaria: #B88655; /* Dourado caramelo para os botões e destaques */
-    --cor-fundo: #e0d6c8; /* Bege claro para o fundo da página */
-    --cor-texto: #554e47; /* Marrom acinzentado para leitura confortável */
+    --cor-primaria: #4e2700;   /* Marrom escuro: cabeçalho, rodapé e títulos */
+    --cor-secundaria: #7f5228; /* Caramelo escuro: botões e destaques sobre fundo claro */
+    --cor-destaque: #e6c08f;   /* Dourado claro: destaques sobre fundo escuro */
+    --cor-fundo: #e0d6c8;      /* Bege: fundo da página */
+    --cor-suave: #efe7dc;      /* Bege claro: seções de destaque */
+    --cor-texto: #554e47;      /* Marrom acinzentado: texto */
+    --cor-branca: #ffffff;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    line-height: 1.5;
     margin: 0;
-    padding: 0;
 }
 
-/* Cabeçalho e Navegação */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--cor-primaria);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cabeçalho e navegação */
 header {
     background-color: var(--cor-primaria);
-    color: white;
+    color: var(--cor-branca);
     padding: 15px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
+    color: var(--cor-branca);
     margin: 0;
     font-size: 1.5rem;
 }
@@ -34,8 +55,9 @@ header h1 {
 #menu-btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--cor-branca);
     font-size: 2rem;
+    line-height: 1;
     cursor: pointer;
 }
 
@@ -57,16 +79,24 @@ header h1 {
 }
 
 .menu-links a {
-    color: white;
+    color: var(--cor-branca);
     text-decoration: none;
     font-size: 1.1rem;
+    padding-bottom: 4px;
 }
 
-.menu-links a:hover, .menu-links a.active {
-    color: var(--cor-secundaria);
+.menu-links a:hover,
+.menu-links a.active {
+    color: var(--cor-destaque);
 }
 
-/* Conteúdo Principal */
+/* Wayfinding: página atual sublinhada */
+.menu-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+/* Conteúdo principal */
 main {
     padding: 20px;
     max-width: 1000px;
@@ -75,21 +105,20 @@ main {
 
 .hero {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #e0e6ed;
+    padding: 40px 20px;
+    background-color: var(--cor-suave);
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
 .hero h2 {
-    font-family: 'Playfair Display', serif;
-    color: var(--cor-primaria);
+    margin-top: 0;
 }
 
 .cta-button {
     display: inline-block;
     background-color: var(--cor-secundaria);
-    color: white;
+    color: var(--cor-branca);
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 4px;
@@ -97,142 +126,178 @@ main {
     font-weight: bold;
 }
 
-/* Grelha de Produtos (Mobile: 1 coluna) */
+.cta-button:hover,
+.btn-detalhes:hover {
+    background-color: var(--cor-primaria);
+}
+
+/* Filtros do catálogo */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtros label {
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.filtros select {
+    margin-left: 8px;
+    padding: 8px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.filtros p {
+    margin: 0;
+}
+
+/* Grade de produtos (mobile: 1 coluna) */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-/* Rodapé */
-footer {
-    background-color: var(--cor-primaria);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-/* Layout para PC / Tablets Grandes */
-@media (min-width: 768px) {
-    #menu-btn {
-        display: none;
-    }
-    
-    .menu-links {
-        display: flex;
-        width: auto;
-    }
-    
-    .menu-links li {
-        margin: 0 10px;
-    }
-
-    /* Grelha de Produtos (Desktop: 3 colunas) */
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Estilo dos Cartões Dinâmicos de Perfume */
+/* Cartões de perfume */
 .cartao-perfume {
-    background-color: white;
+    background-color: var(--cor-branca);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
 }
 
 .cartao-perfume img {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 4px;
     margin-bottom: 10px;
 }
 
-.cartao-perfume h4 {
-    color: var(--cor-primaria);
+.cartao-perfume h3 {
     margin: 5px 0;
-    font-family: 'Playfair Display', serif;
 }
 
 .cartao-perfume p {
     margin: 3px 0;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .cartao-perfume .preco {
     color: var(--cor-secundaria);
     font-weight: bold;
     font-size: 1.1rem;
-    margin-top: 10px;
+    margin: 10px 0 15px;
 }
 
-/* Botão Ver Detalhes */
 .btn-detalhes {
     background-color: var(--cor-secundaria);
-    color: white;
+    color: var(--cor-branca);
     border: none;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-/* Fundo escuro do Modal */
-.modal {
-    display: none; 
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+.cartao-perfume .btn-detalhes {
+    margin-top: auto;
+}
+
+/* Modal (elemento dialog) */
+#modal-perfume {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 420px;
+    max-height: 85vh;
+    background-color: var(--cor-suave);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+#modal-perfume::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Caixa branca do Modal */
-.modal-conteudo {
-    background-color: var(--cor-fundo);
-    margin: 5% auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 85%;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-    max-height: 85vh; 
-    overflow-y: auto; 
-}
-
-/* Limita o tamanho da imagem */
-.modal-conteudo img {
-    max-width: 100%;
-    max-height: 35vh;
-    object-fit: contain; 
-    border-radius: 4px;
+#modal-figura {
     margin: 15px 0;
 }
 
+#modal-figura img {
+    max-height: 35vh;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
 #fechar-modal {
-    color: var(--cor-texto);
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 28px;
-    font-weight: bold;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    line-height: 1;
     cursor: pointer;
 }
 
-/* Estilos do Formulário */
+.notas-olfativas {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.notas-olfativas h4 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.notas-olfativas p {
+    margin: 5px 0;
+}
+
+/* Formulário */
 .formulario-container {
-    background-color: white;
-    padding: 30px;
+    background-color: var(--cor-branca);
+    padding: 30px 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     max-width: 600px;
     margin: 0 auto;
+}
+
+#form-contato fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 15px 20px;
+    margin: 0 0 20px;
+}
+
+#form-contato legend {
+    font-weight: bold;
+    color: var(--cor-primaria);
+    padding: 0 5px;
 }
 
 #form-contato label {
@@ -242,33 +307,101 @@ footer {
     color: var(--cor-primaria);
 }
 
-#form-contato input, #form-contato textarea {
+#form-contato input,
+#form-contato select,
+#form-contato textarea {
+    display: block;
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     border-radius: 4px;
-    box-sizing: border-box;
     font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
-/* Estilo da Pirâmide Olfativa no Modal */
-.notas-olfativas {
+#form-contato input:invalid:not(:placeholder-shown) {
+    border-left: 5px solid #b00020;
+}
+
+#form-contato input:valid:not(:placeholder-shown) {
+    border-left: 5px solid #2e7d32;
+}
+
+.contador-envios {
     margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #ccc;
-    text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
-.notas-olfativas h4 {
-    color: var(--cor-secundaria);
-    margin-top: 0;
-    margin-bottom: 10px;
+/* Página de confirmação */
+.resumo-envio {
+    background-color: var(--cor-branca);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.resumo-envio dt {
+    font-weight: bold;
+    color: var(--cor-primaria);
+    margin-top: 12px;
+}
+
+.resumo-envio dd {
+    margin: 4px 0 0;
+    overflow-wrap: anywhere;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-.notas-olfativas p {
-    margin: 5px 0;
+footer p {
+    margin: 6px 0;
+}
+
+footer a {
+    color: var(--cor-destaque);
+}
+
+/* Telas médias e grandes */
+@media (min-width: 640px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    #menu-btn {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex;
+        width: auto;
+    }
+
+    .menu-links li {
+        margin: 0 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Efeito de hover em telas maiores */
+    .cartao-perfume img {
+        transition: transform 0.3s ease;
+    }
+
+    .cartao-perfume:hover img {
+        transform: scale(1.03);
+    }
 }

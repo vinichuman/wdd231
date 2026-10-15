@@ -1,33 +1,19 @@
-// 1. Menu Hambúrguer
-const menuBtn = document.getElementById('menu-btn');
-const menuLinks = document.querySelector('.menu-links');
+import { iniciarMenu, iniciarRodape } from './modulos/layout.js';
 
-menuBtn.addEventListener('click', () => {
-    menuLinks.classList.toggle('open');
-});
+iniciarMenu();
+iniciarRodape();
 
-document.getElementById('ano').textContent = new Date().getFullYear();
+const form = document.querySelector('#form-contato');
+const contador = document.querySelector('#contador');
+const campoData = document.querySelector('#data-envio');
+const CHAVE_ENVIOS = 'essencia-num-mensagens';
 
-// 2. Lógica do Formulário e LocalStorage
-const form = document.getElementById('form-contato');
-const mensagemSucesso = document.getElementById('mensagem-sucesso');
-const contadorSpan = document.getElementById('contador');
+// Mostra quantas mensagens o visitante já enviou (localStorage)
+const enviadas = Number(localStorage.getItem(CHAVE_ENVIOS)) || 0;
+contador.textContent = enviadas;
 
-// Le o LocalStorage quando a página carrega. Se não houver nada, começa em 0.
-let mensagensEnviadas = Number(window.localStorage.getItem('numMensagens')) || 0;
-contadorSpan.textContent = mensagensEnviadas;
-
-form.addEventListener('submit', function(evento) {
-    // Evita que a página recarregue ao enviar o formulário
-    evento.preventDefault();
-
-    // Mostra a mensagem de sucesso
-    mensagemSucesso.style.display = 'block';
-    form.reset();
-
-    // Atualiza o contador e guarda no LocalStorage
-    mensagensEnviadas++;
-    window.localStorage.setItem('numMensagens', mensagensEnviadas);
-    
-    contadorSpan.textContent = mensagensEnviadas;
+// Ao enviar, registra a data e atualiza o contador antes de ir para a página de confirmação
+form.addEventListener('submit', () => {
+    campoData.value = new Date().toLocaleString('pt-BR');
+    localStorage.setItem(CHAVE_ENVIOS, enviadas + 1);
 });

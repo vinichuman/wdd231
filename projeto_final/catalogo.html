@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essência Global - Catálogo Completo</title>
-    <link rel="stylesheet" href="estilos/base.css">
+    <title>Catálogo de Perfumes | Essência Global</title>
+    <meta name="description" content="Veja o catálogo completo da Essência Global e filtre perfumes importados masculinos e unissex por categoria.">
+    <meta name="author" content="Vinícius Andrade Chuman">
+
+    <meta property="og:title" content="Catálogo Completo de Perfumes - Essência Global">
+    <meta property="og:description" content="Explore 15 fragrâncias importadas, filtre por categoria e confira a pirâmide olfativa de cada perfume.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vinichuman.github.io/wdd231/projeto_final/imagens/og-essencia-global.jpg">
+    <meta property="og:url" content="https://vinichuman.github.io/wdd231/projeto_final/catalogo.html">
+
+    <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/base.css">
 </head>
 <body>
     <header>
         <h1>Essência Global</h1>
-        <button id="menu-btn" aria-label="Abrir menu">&#9776;</button>
-        <nav id="menu">
+        <button type="button" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+        <nav id="menu" aria-label="Navegação principal">
             <ul class="menu-links">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                <li><a href="catalogo.html" class="active" aria-current="page">Catálogo</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
@@ -26,35 +40,42 @@
             <p>Explore a nossa seleção exclusiva com as melhores fragrâncias internacionais.</p>
         </section>
 
-        <section class="destaques">
-            <div id="perfumes-container" class="grid-container">
+        <section class="catalogo" aria-label="Lista de perfumes">
+            <div class="filtros">
+                <label for="filtro-categoria">Categoria:
+                    <select id="filtro-categoria" name="categoria">
+                        <option value="todos">Todas</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Unissex">Unissex</option>
+                    </select>
+                </label>
+                <p id="total-perfumes" aria-live="polite"></p>
             </div>
+            <div id="perfumes-container" class="grid-container"></div>
         </section>
 
-        <!-- Estrutura do Modal (Oculta por padrão) -->
-        <div id="modal-perfume" class="modal">
-            <div class="modal-conteudo">
-                <span id="fechar-modal">&times;</span>
-                <h3 id="modal-nome"></h3>
-                <img id="modal-img" src="" alt="Imagem do perfume">
-                <p><strong>Marca:</strong> <span id="modal-marca"></span></p>
-                <p><strong>Categoria:</strong> <span id="modal-categoria"></span></p>
+        <dialog id="modal-perfume" aria-labelledby="modal-nome">
+            <button type="button" id="fechar-modal" aria-label="Fechar detalhes">&times;</button>
+            <h2 id="modal-nome">Perfume</h2>
+            <figure id="modal-figura"></figure>
+            <p><strong>Marca:</strong> <span id="modal-marca"></span></p>
+            <p><strong>Categoria:</strong> <span id="modal-categoria"></span></p>
+            <p><strong>Preço:</strong> <span id="modal-preco"></span></p>
 
-                <!-- Pirâmide Olfativa -->
-                <div class="notas-olfativas">
-                    <h4>Pirâmide Olfativa</h4>
-                    <p><strong>Topo:</strong> <span id="modal-topo"></span></p>
-                    <p><strong>Coração:</strong> <span id="modal-coracao"></span></p>
-                    <p><strong>Fundo:</strong> <span id="modal-fundo"></span></p>
-                </div>
+            <div class="notas-olfativas">
+                <h3>Pirâmide Olfativa</h3>
+                <p><strong>Topo:</strong> <span id="modal-topo"></span></p>
+                <p><strong>Coração:</strong> <span id="modal-coracao"></span></p>
+                <p><strong>Fundo:</strong> <span id="modal-fundo"></span></p>
             </div>
-        </div>
+        </dialog>
     </main>
 
     <footer>
-        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
+        <p>&copy; <span id="ano">2026</span> | Vinícius Andrade Chuman | WDD 231 - Projeto Final</p>
+        <p><a href="atribuicoes.html">Atribuições</a> | <a href="">Vídeo de demonstração</a></p>
     </footer>
 
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/catalogo.js"></script>
 </body>
 </html>

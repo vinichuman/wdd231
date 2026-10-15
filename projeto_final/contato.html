@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essência Global - Contato</title>
-    <link rel="stylesheet" href="estilos/base.css">
+    <title>Contato e Encomendas | Essência Global</title>
+    <meta name="description" content="Fale com a Essência Global: tire dúvidas sobre fragrâncias ou solicite a encomenda de um perfume importado.">
+    <meta name="author" content="Vinícius Andrade Chuman">
+
+    <meta property="og:title" content="Fale com a Essência Global - Dúvidas e Encomendas">
+    <meta property="og:description" content="Envie sua dúvida ou peça a encomenda de um perfume importado. Nossa equipe responde rapidamente.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vinichuman.github.io/wdd231/projeto_final/imagens/og-essencia-global.jpg">
+    <meta property="og:url" content="https://vinichuman.github.io/wdd231/projeto_final/contato.html">
+
+    <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/base.css">
 </head>
 <body>
     <header>
         <h1>Essência Global</h1>
-        <button id="menu-btn" aria-label="Abrir menu">&#9776;</button>
-        <nav id="menu">
+        <button type="button" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+        <nav id="menu" aria-label="Navegação principal">
             <ul class="menu-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contato.html" class="active">Contato</a></li>
+                <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -27,31 +41,55 @@
         </section>
 
         <section class="formulario-container">
-            <form id="form-contato">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
+            <form id="form-contato" action="obrigado.html" method="get">
+                <fieldset>
+                    <legend>Seus dados</legend>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Ex.: Maria Silva" minlength="3" required>
 
-                <label for="mensagem">Sua Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="seuemail@exemplo.com" required>
+
+                    <label for="telefone">Telefone (opcional)</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(11) 91234-5678" pattern="[0-9()+\s-]{8,20}" title="Use apenas números, espaços, parênteses, + ou hífen">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua solicitação</legend>
+
+                    <label for="assunto">Assunto *</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="Dúvida sobre fragrância">Dúvida sobre fragrância</option>
+                        <option value="Encomenda especial">Encomenda especial</option>
+                        <option value="Disponibilidade">Disponibilidade de produto</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
+                    <label for="categoria">Categoria de interesse</label>
+                    <select id="categoria" name="categoria">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Unissex">Unissex</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+
+                    <label for="mensagem">Sua mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte para nós o que você procura" required></textarea>
+                </fieldset>
+
+                <input type="hidden" id="data-envio" name="data">
 
                 <button type="submit" class="btn-detalhes">Enviar Mensagem</button>
             </form>
-            
-            <div id="mensagem-sucesso" style="display: none; color: green; margin-top: 15px; font-weight: bold;">
-                Mensagem enviada com sucesso! Entraremos em contato em breve.
-            </div>
-            
-            <p style="margin-top: 20px; font-size: 0.9rem;">
-                Você já enviou <span id="contador" style="font-weight: bold;">0</span> mensagem(ns) para nós.
-            </p>
+
+            <p class="contador-envios">Você já enviou <strong id="contador">0</strong> mensagem(ns) para nós.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="ano"></span> | Vinícius Andrade Chuman | WDD 231</p>
+        <p>&copy; <span id="ano">2026</span> | Vinícius Andrade Chuman | WDD 231 - Projeto Final</p>
+        <p><a href="atribuicoes.html">Atribuições</a> | <a href="">Vídeo de demonstração</a></p>
     </footer>
 
     <script type="module" src="scripts/contato.js"></script>
